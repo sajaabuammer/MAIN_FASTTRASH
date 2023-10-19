@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AClick : MonoBehaviour
-{
-    public GameObject instructions1;
+{ 
     public GameObject instructions2;
 
     // Start is called before the first frame update
