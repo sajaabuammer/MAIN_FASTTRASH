@@ -10459,8 +10459,8 @@ GameObject:
   - component: {fileID: 1167959274}
   - component: {fileID: 1167959272}
   - component: {fileID: 1167959277}
-  - component: {fileID: 1167959271}
   - component: {fileID: 1167959273}
+  - component: {fileID: 1167959271}
   m_Layer: 0
   m_Name: E22CREATE
   m_TagString: Untagged
@@ -13733,7 +13733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.3
+      value: -1.8436583
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13741,23 +13741,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 97.81
+      value: 48.854717
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00859646
+      value: -0.010629457
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.80476826
+      value: -0.9950897
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.006339633
+      value: -0.0010510935
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.59349304
+      value: -0.098399155
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_RootOrder
@@ -13769,7 +13769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -107.185005
+      value: -191.295
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -14691,6 +14691,7 @@ GameObject:
   - component: {fileID: 1835938820}
   - component: {fileID: 1835938819}
   - component: {fileID: 1835938818}
+  - component: {fileID: 1835938825}
   - component: {fileID: 1835938824}
   m_Layer: 0
   m_Name: E12CREATE
@@ -14832,6 +14833,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   E1DESTROY: {fileID: 6179377633717154972}
   E12CREATE: {fileID: 1835938817}
+--- !u!114 &1835938825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835938817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ebe118a9db964cfb9c3e2fe16290c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  E1DESTROY: {fileID: 0}
+  E12CREATE: {fileID: 0}
 --- !u!4 &1839177985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8167ab7dbadcb49d2ae7d92f3814f0fe,
