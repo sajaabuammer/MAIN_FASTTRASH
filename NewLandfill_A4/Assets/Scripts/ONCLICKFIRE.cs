@@ -4,41 +4,36 @@ using UnityEngine;
 
 public class ONCLICKFIRE : MonoBehaviour
 {
-    public ParticleSystem targetParticleSystem;
-    public ParticleSystem targetParticleSystem2;
-    public float delay = 1.0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ParticleSystem Fire1;
+    public ParticleSystem Fire2;// Assign the Particle System in the Unity Editor
+    public GameObject LetterA;
+    public GameObject LetterS;
+    public GameObject LetterL;
+    public GameObject Rock;
+    private bool hasStarted = false;
+    public float delay = 2f;
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnMouseDown()
-    {
-        if (targetParticleSystem != null)
-
-        if (!targetParticleSystem.isPlaying)
+        // Check if the spacebar is pressed
+        if (Input.GetKeyDown(KeyCode.Space) && !hasStarted)
         {
-            targetParticleSystem.Play();
+            // Start the particle system if it hasn't been triggered yet
+            Fire1.Play();
+            Fire2.Play();
+            hasStarted = true; // Update the start status
+            Destroy(LetterA, delay);
+            Destroy(LetterS, delay);
+            Destroy(LetterL, delay);
         }
 
-        if (targetParticleSystem2 != null)
-
-            if (!targetParticleSystem2.isPlaying)
-            {
-                targetParticleSystem2.Play();
-            }
-        if (Input.GetMouseButtonDown(0))
+        if (LetterA == null)
         {
-            // Call the function to play the particle system with a delay
-            Invoke("PlayParticleWithDelay", 10);
+            Destroy(Rock);
         }
 
     }
+
 }
+
+
