@@ -6,6 +6,11 @@ TagManager:
   tags:
   - '"POLYEESTER"'
   - WOOOL
+  - Textile1
+  - Textile2
+  - Textile3
+  - Textile4
+  - Textile5
   layers:
   - Default
   - TransparentFX
