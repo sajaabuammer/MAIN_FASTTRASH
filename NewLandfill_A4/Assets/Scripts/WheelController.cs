@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WheelController : MonoBehaviour
 {
+    public AudioClip mySound;
 
     float rotSpeed = 0;
 
@@ -19,6 +20,7 @@ public class WheelController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             this.rotSpeed = 5;
+            GetComponent<AudioSource>().PlayOneShot(mySound);
         }
 
         transform.Rotate(0, 0, this.rotSpeed);

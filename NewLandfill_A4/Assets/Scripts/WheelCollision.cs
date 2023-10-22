@@ -50,11 +50,11 @@ public class WheelCollision : MonoBehaviour
         // Check for a full rotation (360 degrees) for each textile.
         if (newRotation < currentRotation)
         {
-            rotations1++;
-            rotations2++;
-            rotations3++;
-            rotations4++;
-            rotations5++;
+            if(Textile1.transform.IsChildOf(transform)) { rotations1++;}
+            if (Textile2.transform.IsChildOf(transform)) { rotations2++; }
+            if (Textile3.transform.IsChildOf(transform)) { rotations3++; }
+            if (Textile4.transform.IsChildOf(transform)) { rotations4++; }
+            if (Textile5.transform.IsChildOf(transform)) { rotations5++; }
         }
 
         // Check if the required rotations have been reached for each textile and destroy them individually.
