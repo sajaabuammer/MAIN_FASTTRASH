@@ -11,6 +11,11 @@ TagManager:
   - Textile3
   - Textile4
   - Textile5
+  - Cloth1
+  - Cloth2
+  - Cloth3
+  - Cloth4
+  - Cloth5
   layers:
   - Default
   - TransparentFX
