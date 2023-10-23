@@ -14,6 +14,14 @@ public class CollisionScript2 : MonoBehaviour
     public GameObject BigPile14;
     public GameObject BigPile15;
     public GameObject BigPile16;
+    public GameObject BigPile17;
+    public GameObject BigPile18;
+    public GameObject BigPile19;
+    public GameObject BigPile20;
+    public GameObject BigPile21;
+    public GameObject BigPile22;
+    public GameObject BigPile23;
+    public GameObject BigPile24;
 
     public float fallSpeed = 1.0f; // Adjust the fall speed as needed.
 
@@ -29,6 +37,14 @@ public class CollisionScript2 : MonoBehaviour
             MoveObjectsUnderGround(BigPile14);
             MoveObjectsUnderGround(BigPile15);
             MoveObjectsUnderGround(BigPile16);
+            MoveObjectsUnderGround(BigPile17);
+            MoveObjectsUnderGround(BigPile18);
+            MoveObjectsUnderGround(BigPile19);
+            MoveObjectsUnderGround(BigPile20);
+            MoveObjectsUnderGround(BigPile21);
+            MoveObjectsUnderGround(BigPile22);
+            MoveObjectsUnderGround(BigPile23);
+            MoveObjectsUnderGround(BigPile24);
         }
     }
 
@@ -44,7 +60,7 @@ public class CollisionScript2 : MonoBehaviour
     {
         Vector3 startPosition = obj.transform.position;
         Vector3 targetPosition = obj.transform.position;
-        targetPosition.y = -17f; // Adjust this value based on your ground's height.
+        targetPosition.y = -20f; // Adjust this value based on your ground's height.
 
         float journeyLength = Mathf.Abs(targetPosition.y - startPosition.y);
         float startTime = Time.time;

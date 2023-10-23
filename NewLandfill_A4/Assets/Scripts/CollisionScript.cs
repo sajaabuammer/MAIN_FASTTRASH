@@ -44,7 +44,7 @@ public class CollisionScript : MonoBehaviour
     {
         Vector3 startPosition = obj.transform.position;
         Vector3 targetPosition = obj.transform.position;
-        targetPosition.y = -17f; // Adjust this value based on your ground's height.
+        targetPosition.y = -20f; // Adjust this value based on your ground's height.
 
         float journeyLength = Mathf.Abs(targetPosition.y - startPosition.y);
         float startTime = Time.time;

@@ -17,7 +17,7 @@ public class WheelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M) || CAVE2.GetButtonDown(CAVE2.Button.Button5))
+        if (Input.GetKeyDown(KeyCode.M) || CAVE2.GetButtonDown(CAVE2.Button.Button7))
         {
             this.rotSpeed = 5;
             GetComponent<AudioSource>().PlayOneShot(mySound);

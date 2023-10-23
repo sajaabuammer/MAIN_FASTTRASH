@@ -23,7 +23,7 @@ public class DelayedFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || CAVE2.GetButtonDown(CAVE2.Button.Button7))
+        if (Input.GetKeyDown(KeyCode.Space) || CAVE2.GetButtonDown(CAVE2.Button.Button5))
         {
             // Cast a ray from the camera to the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
