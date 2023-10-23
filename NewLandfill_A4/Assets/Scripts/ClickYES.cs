@@ -20,7 +20,7 @@ public class ClickYES : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || CAVE2.GetButtonDown(CAVE2.Button.Button3))
         {
             rock.SetActive(true);
             Destroy(instructions2);

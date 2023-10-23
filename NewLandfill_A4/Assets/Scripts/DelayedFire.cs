@@ -13,6 +13,7 @@ public class DelayedFire : MonoBehaviour
     public GameObject LetterA;
     public GameObject LetterS;
     public GameObject LetterL;
+    public AudioClip FireStarter;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class DelayedFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || CAVE2.GetButtonDown(CAVE2.Button.Button7))
         {
             // Cast a ray from the camera to the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -34,6 +35,7 @@ public class DelayedFire : MonoBehaviour
                 if (hit.collider.gameObject == targetObject)
                 {
                     StartCoroutine(Delays());
+                    GetComponent<AudioSource>().PlayOneShot(FireStarter);
                 }
 
             }
@@ -46,7 +48,6 @@ public class DelayedFire : MonoBehaviour
             Destroy(LetterL);
             Destroy(targetObject);
         }
-
 
     }
 

@@ -23,7 +23,7 @@ public class AClick : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || CAVE2.GetButtonDown(CAVE2.Button.Button3))
         { 
             instructions2.SetActive(true);
         }

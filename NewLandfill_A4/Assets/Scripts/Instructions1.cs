@@ -25,7 +25,7 @@ public class Instructions1 : MonoBehaviour
 
         void OnMouseOver()
     { 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || CAVE2.GetButtonDown(CAVE2.Button.Button3))
 
         {
         instructions1.SetActive(true);
