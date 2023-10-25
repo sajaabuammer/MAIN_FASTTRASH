@@ -269,6 +269,8 @@ public class GrabbableObject : CAVE2Interactable {
             }
         }
         grabbed = true;
+        Debug.Log("particples start");
+        // add partiles here
     }
 
     void OnWandGrabRelease()

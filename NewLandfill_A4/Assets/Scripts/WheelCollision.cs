@@ -5,18 +5,19 @@ using UnityEngine;
 public class WheelCollision : MonoBehaviour
 {
     public GameObject Textile1;
-    public GameObject Textile2;
+  /*  public GameObject Textile2;
     public GameObject Textile3;
     public GameObject Textile4;
-    public GameObject Textile5;
+    public GameObject Textile5;*/
 
     private float currentRotation = 0f; // Current rotation of the wheel.
     private int rotations1 = 0; // Counter for rotations for Textile1.
-    private int rotations2 = 0; // Counter for rotations for Textile2.
+   /* private int rotations2 = 0; // Counter for rotations for Textile2.
     private int rotations3 = 0; // Counter for rotations for Textile3.
     private int rotations4 = 0; // Counter for rotations for Textile4.
-    private int rotations5 = 0; // Counter for rotations for Textile5.
+    private int rotations5 = 0; // Counter for rotations for Textile5.*/
     private int requiredRotations = 5; // Set the desired number of rotations.
+    private int requiredRotations2 = 10; // Set the desired number of rotations.
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,7 +25,7 @@ public class WheelCollision : MonoBehaviour
         {
             Textile1.transform.parent = transform;
         }
-        if (other.gameObject.tag == "Textile2")
+       /* if (other.gameObject.tag == "Textile2")
         {
             Textile2.transform.parent = transform;
         }
@@ -40,6 +41,7 @@ public class WheelCollision : MonoBehaviour
         {
             Textile5.transform.parent = transform;
         }
+       */
     }
 
     private void Update()
@@ -51,11 +53,12 @@ public class WheelCollision : MonoBehaviour
         if (newRotation < currentRotation)
         {
             if(Textile1.transform.IsChildOf(transform)) { rotations1++;}
-            if (Textile2.transform.IsChildOf(transform)) { rotations2++; }
-            if (Textile3.transform.IsChildOf(transform)) { rotations3++; }
-            if (Textile4.transform.IsChildOf(transform)) { rotations4++; }
-            if (Textile5.transform.IsChildOf(transform)) { rotations5++; }
+           /* if (Textile2.transform.IsChildOf(transform)) { rotations2++;}
+            if (Textile3.transform.IsChildOf(transform)) { rotations3++;}
+            if (Textile4.transform.IsChildOf(transform)) { rotations4++;}
+            if (Textile5.transform.IsChildOf(transform)) { rotations5++;}*/
         }
+
 
         // Check if the required rotations have been reached for each textile and destroy them individually.
         if (rotations1 >= requiredRotations)
@@ -64,7 +67,7 @@ public class WheelCollision : MonoBehaviour
             rotations1 = 0;
         }
 
-        if (rotations2 >= requiredRotations)
+       /* if (rotations2 >= requiredRotations2)
         {
             Destroy(Textile2);
             rotations2 = 0;
@@ -87,7 +90,7 @@ public class WheelCollision : MonoBehaviour
             Destroy(Textile5);
             rotations5 = 0;
         }
-
+       */
         // Update the current rotation value.
         currentRotation = newRotation;
     }
