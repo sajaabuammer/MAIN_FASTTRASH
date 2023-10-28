@@ -19,7 +19,7 @@ public class WheelController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M) || CAVE2.GetButtonDown(CAVE2.Button.Button7))
         {
-            this.rotSpeed = 5;
+            this.rotSpeed = 2;
             GetComponent<AudioSource>().PlayOneShot(mySound);
         }
 
