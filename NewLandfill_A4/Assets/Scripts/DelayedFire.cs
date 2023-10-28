@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class DelayedFire : MonoBehaviour
 {
-    public GameObject targetObject;
-    public ParticleSystem system1;
-    public ParticleSystem system2;
-    public ParticleSystem system3;
-    public ParticleSystem system4;
-    public ParticleSystem system5;
+
+    public ParticleSystem fire1;
+    public ParticleSystem fire2;
+    public ParticleSystem fire3;
+    public ParticleSystem fire4;
+    public ParticleSystem fire5;
     public GameObject LetterA;
     public GameObject LetterS;
     public GameObject LetterL;
@@ -23,44 +23,24 @@ public class DelayedFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || CAVE2.GetButtonDown(CAVE2.Button.Button5))
+        
+        if (fire1.isPlaying)
         {
-            // Cast a ray from the camera to the mouse position
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            fire2.Play();
+            fire3.Play();
+            fire4.Play();
+            fire5.Play();
 
-            if (Physics.Raycast(ray, out hit))
-            {
-                // Check if the hit object is the target object
-                if (hit.collider.gameObject == targetObject)
-                {
-                    StartCoroutine(Delays());
-                    GetComponent<AudioSource>().PlayOneShot(FireStarter);
-                }
-
-            }
         }
 
-        if (system2.isPlaying)
+        if (fire2.isPlaying)
         {
             Destroy(LetterA);
             Destroy(LetterS);
             Destroy(LetterL);
-            Destroy(targetObject);
         }
 
     }
 
-    IEnumerator Delays()
-    {
-
-        system1.Play();
-        yield return new WaitForSeconds(3);
-        system2.Play();
-        system3.Play();
-        system4.Play();
-        system5.Play();
-
-    }
 }
 

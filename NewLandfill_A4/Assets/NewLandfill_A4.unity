@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.402216, g: 0.34778932, b: 0.28113618, a: 1}
+  m_IndirectSpecularColor: {r: 0.402216, g: 0.34778932, b: 0.2811362, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1109,6 +1109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 110418027}
+  - component: {fileID: 110418028}
   m_Layer: 0
   m_Name: FAST SOLUTION 2
   m_TagString: Untagged
@@ -1133,6 +1134,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: -10.238001, z: 0}
+--- !u!114 &110418028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110418026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac6072cc7bc754b819293bcbf8bf95e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question2: {fileID: 110418026}
 --- !u!1001 &120166267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5214,6 +5228,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2.0133095
       objectReference: {fileID: 0}
+    - target: {fileID: 777648746385957288, guid: f5de73ec6c8b00c478c7495530054df1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4392544643399330572, guid: f5de73ec6c8b00c478c7495530054df1,
         type: 3}
       propertyPath: m_Name
@@ -5252,11 +5271,6 @@ PrefabInstance:
     - target: {fileID: 3390702229687067035, guid: f5de73ec6c8b00c478c7495530054df1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 777648746385957288, guid: f5de73ec6c8b00c478c7495530054df1,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2917593121526351295, guid: f5de73ec6c8b00c478c7495530054df1,
@@ -9679,6 +9693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 900000485}
+  - component: {fileID: 900000486}
   m_Layer: 0
   m_Name: FAST SOLUTION 1
   m_TagString: Untagged
@@ -9704,6 +9719,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900000486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900000484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3b1cf6551eb4619979ddee6d580ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  question1: {fileID: 900000484}
 --- !u!1 &918854624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: d4a2d9e4e6a4647238806de44cb631f1,
@@ -12279,6 +12307,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2.0133095
       objectReference: {fileID: 0}
+    - target: {fileID: 777648746385957288, guid: f5de73ec6c8b00c478c7495530054df1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4392544643399330572, guid: f5de73ec6c8b00c478c7495530054df1,
         type: 3}
       propertyPath: m_Name
@@ -12303,11 +12336,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 777648746385957288, guid: f5de73ec6c8b00c478c7495530054df1,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5de73ec6c8b00c478c7495530054df1, type: 3}
@@ -12495,7 +12523,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.24
+      value: -22.767675
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12503,23 +12531,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 69.09
+      value: 66.68385
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.025579032
+      value: -0.021476507
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9264237
+      value: 0.9995448
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0065357303
+      value: -0.015354554
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.3755557
+      value: -0.014604113
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_RootOrder
@@ -12531,7 +12559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -495.90503
+      value: -538.364
       objectReference: {fileID: 0}
     - target: {fileID: 4000012806552110, guid: c1621f4dd1e8c2748a5a423aa7736d55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -17237,8 +17265,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1716793683}
   - component: {fileID: 1716793682}
+  - component: {fileID: 1716793684}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: EmptyFirstInt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17273,6 +17302,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 73
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1716793684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716793681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64a42e2e843d247d99937490422bc3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fire1: {fileID: 1997749210}
+  fire2: {fileID: 1376437781}
+  fire3: {fileID: 1881846538}
+  fire4: {fileID: 1771618611}
+  fire5: {fileID: 788916561}
+  LetterA: {fileID: 1025724294453522796}
+  LetterS: {fileID: 6701813482540945954}
+  LetterL: {fileID: 3647763187361868796}
+  FireStarter: {fileID: 0}
 --- !u!1 &1720398127 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9a74fb3ae53bc4d6d9e05eb9e4a19101,
@@ -17285,6 +17335,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1828999383}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720398129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720398127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2867a57bcca02434da5d0f78f962485c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wandPointing: 0
+  wandTouching: 0
+  rock: {fileID: 8296172668033221576}
+  question2: {fileID: 110418026}
+  grabbed: 0
+  grabButton: 2
+  grabStyle: 0
+  holdInteraction: 1
+  allowWandCollision: 1
+  centerOnWand: 0
+  constraints: 0
+  grabber: {fileID: 0}
+  showPointingOver: 1
+  highlightScaler: 1.05
+  defaultMesh: {fileID: 0}
+  useSimplifiedMesh: 0
+  simpleMesh: {fileID: 0}
+  pointingOverMaterial: {fileID: 0}
+  showTouchingOver: 1
+  touchingOverMaterial: {fileID: 0}
 --- !u!65 &1720398130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17298,20 +17380,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08718013, y: 0.04337618, z: 0.023484105}
   m_Center: {x: 0.033973068, y: 0.016597193, z: -0.0043243365}
---- !u!114 &1720398131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720398127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 099cb819580df48e9a7167d27742785e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rock: {fileID: 8296172668033221576}
-  instructions2: {fileID: 110418026}
 --- !u!1 &1734519241
 GameObject:
   m_ObjectHideFlags: 0
@@ -19370,10 +19438,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1962114893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f58557ac19f41af9b70f1f7461a40e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c9203081c70a4623a76fb66b0896cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructions1: {fileID: 900000484}
+  wandPointing: 0
+  wandTouching: 0
+  question1: {fileID: 900000484}
+  grabbed: 0
+  grabButton: 2
+  grabStyle: 0
+  holdInteraction: 1
+  allowWandCollision: 1
+  centerOnWand: 0
+  constraints: 0
+  grabber: {fileID: 0}
+  showPointingOver: 1
+  highlightScaler: 1.05
+  defaultMesh: {fileID: 0}
+  useSimplifiedMesh: 0
+  simpleMesh: {fileID: 0}
+  pointingOverMaterial: {fileID: 0}
+  showTouchingOver: 1
+  touchingOverMaterial: {fileID: 0}
 --- !u!65 &1962114896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20513,7 +20599,6 @@ GameObject:
   - component: {fileID: 1025724294453522797}
   - component: {fileID: 1025724294453522799}
   - component: {fileID: 1025724294453522800}
-  - component: {fileID: 1025724294453522801}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -20572,25 +20657,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1025724294453522796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1986cd4bb6904fd78bd264f528a8208, type: 3}
+  m_Script: {fileID: 11500000, guid: 4924f9b673cf04c148e383591120ede5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructions2: {fileID: 110418026}
-  rock: {fileID: 8296172668033221576}
---- !u!114 &1025724294453522801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1025724294453522796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8a8d431b1674148b8fe633e27102c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectRenderer: {fileID: 0}
-  highlightColor: {r: 0.6132076, g: 0.6132076, b: 0.45412073, a: 0}
+  wandPointing: 0
+  wandTouching: 0
+  question2: {fileID: 110418026}
+  grabbed: 0
+  grabButton: 2
+  grabStyle: 0
+  holdInteraction: 1
+  allowWandCollision: 1
+  centerOnWand: 0
+  constraints: 0
+  grabber: {fileID: 0}
+  showPointingOver: 1
+  highlightScaler: 1.05
+  defaultMesh: {fileID: 0}
+  useSimplifiedMesh: 0
+  simpleMesh: {fileID: 0}
+  pointingOverMaterial: {fileID: 0}
+  showTouchingOver: 1
+  touchingOverMaterial: {fileID: 0}
 --- !u!23 &1057344436620429384
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22406,8 +22494,8 @@ GameObject:
   - component: {fileID: 2100516640936641479}
   - component: {fileID: 66388476939903938}
   - component: {fileID: 1571782160}
-  - component: {fileID: 3647763187361868797}
   - component: {fileID: 3647763187361868798}
+  - component: {fileID: 3647763187361868797}
   m_Layer: 0
   m_Name: L
   m_TagString: Untagged
@@ -22424,10 +22512,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 3647763187361868796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28032d5c630ec471785b8bd09effccf3, type: 3}
+  m_Script: {fileID: 11500000, guid: 42655de56096e4cb1932759798799653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructions1: {fileID: 900000484}
+  wandPointing: 0
+  wandTouching: 0
+  question1: {fileID: 900000484}
+  grabbed: 0
+  grabButton: 2
+  grabStyle: 0
+  holdInteraction: 1
+  allowWandCollision: 1
+  centerOnWand: 0
+  constraints: 0
+  grabber: {fileID: 0}
+  showPointingOver: 1
+  highlightScaler: 1.05
+  defaultMesh: {fileID: 0}
+  useSimplifiedMesh: 0
+  simpleMesh: {fileID: 0}
+  pointingOverMaterial: {fileID: 0}
+  showTouchingOver: 1
+  touchingOverMaterial: {fileID: 0}
 --- !u!114 &3647763187361868798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23416,8 +23522,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172667980953478}
-  m_LocalRotation: {x: 0.0011833675, y: -0.4421081, z: -0.0019818582, w: 0.8969588}
-  m_LocalPosition: {x: -24.56, y: 5.62, z: 56.59}
+  m_LocalRotation: {x: 0.0009102329, y: -0.31931636, z: -0.002121228, w: 0.9476454}
+  m_LocalPosition: {x: -24.005358, y: 0.099999905, z: 59.118916}
   m_LocalScale: {x: 51.1784, y: 51.1784, z: 51.1784}
   m_Children:
   - {fileID: 7513207550431392420}
@@ -23431,7 +23537,7 @@ Transform:
   - {fileID: 3901287055872853289}
   m_Father: {fileID: 0}
   m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0.021000002, y: -52.477, z: -0.264}
+  m_LocalEulerAnglesHint: {x: 0.021000002, y: -37.243, z: -0.264}
 --- !u!4 &5006512736381599056
 Transform:
   m_ObjectHideFlags: 0
@@ -24054,7 +24160,6 @@ GameObject:
   - component: {fileID: 6701813482540945955}
   - component: {fileID: 6701813482540945957}
   - component: {fileID: 6701813482540945958}
-  - component: {fileID: 6701813482540945959}
   m_Layer: 0
   m_Name: S
   m_TagString: Untagged
@@ -24113,25 +24218,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 6701813482540945954}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1986cd4bb6904fd78bd264f528a8208, type: 3}
+  m_Script: {fileID: 11500000, guid: 4924f9b673cf04c148e383591120ede5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructions2: {fileID: 110418026}
-  rock: {fileID: 8296172668033221576}
---- !u!114 &6701813482540945959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6701813482540945954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8a8d431b1674148b8fe633e27102c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectRenderer: {fileID: 0}
-  highlightColor: {r: 0.6117647, g: 0.6117647, b: 0.45490196, a: 0}
+  wandPointing: 0
+  wandTouching: 0
+  question2: {fileID: 110418026}
+  grabbed: 0
+  grabButton: 2
+  grabStyle: 0
+  holdInteraction: 1
+  allowWandCollision: 1
+  centerOnWand: 0
+  constraints: 0
+  grabber: {fileID: 0}
+  showPointingOver: 1
+  highlightScaler: 1.05
+  defaultMesh: {fileID: 0}
+  useSimplifiedMesh: 0
+  simpleMesh: {fileID: 0}
+  pointingOverMaterial: {fileID: 0}
+  showTouchingOver: 1
+  touchingOverMaterial: {fileID: 0}
 --- !u!33 &6710557821213897328
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25418,9 +25526,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006512735970275803}
-  - component: {fileID: 8296172668033221577}
   - component: {fileID: 8296172668033221578}
   - component: {fileID: 8296172668033221580}
+  - component: {fileID: 8296172668033221579}
+  - component: {fileID: 8296172668033221581}
   m_Layer: 0
   m_Name: ROCK
   m_TagString: Untagged
@@ -25428,28 +25537,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8296172668033221577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8296172668033221576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a42e2e843d247d99937490422bc3ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 8296172668033221576}
-  system1: {fileID: 1997749210}
-  system2: {fileID: 1376437781}
-  system3: {fileID: 1881846538}
-  system4: {fileID: 1771618611}
-  system5: {fileID: 788916561}
-  LetterA: {fileID: 1025724294453522796}
-  LetterS: {fileID: 6701813482540945954}
-  LetterL: {fileID: 3647763187361868796}
-  FireStarter: {fileID: 8300000, guid: c9248b66bbd464137b1545479b62f960, type: 3}
 --- !u!65 &8296172668033221578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25463,6 +25550,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16145335, y: 0.22753811, z: 0.019895678}
   m_Center: {x: -0.091551915, y: -0.090063855, z: -0.0010208469}
+--- !u!114 &8296172668033221579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668033221576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bc39c783da84e3eb3de5dfaebc0dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rock: {fileID: 8296172668033221576}
 --- !u!82 &8296172668033221580
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25559,6 +25659,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8296172668033221581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668033221576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94242481261b4c14a43d5b63f4fe424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wandPointing: 0
+  wandTouching: 0
+  fire1: {fileID: 1997749210}
+  grabbed: 0
+  grabButton: 2
+  grabStyle: 0
+  holdInteraction: 1
+  allowWandCollision: 1
+  centerOnWand: 0
+  constraints: 0
+  grabber: {fileID: 0}
+  showPointingOver: 1
+  highlightScaler: 1.05
+  defaultMesh: {fileID: 0}
+  useSimplifiedMesh: 0
+  simpleMesh: {fileID: 0}
+  pointingOverMaterial: {fileID: 0}
+  showTouchingOver: 1
+  touchingOverMaterial: {fileID: 0}
 --- !u!1 &8296172668158775107
 GameObject:
   m_ObjectHideFlags: 0
