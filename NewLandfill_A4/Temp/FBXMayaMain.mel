@@ -7,30 +7,30 @@ if (getApplicationVersionAsFloat() >= 8.0)
 {
 	// Use unqualified path to support Maya 2013, 2015 and future version
 	loadPlugin "fbxmaya";
-	eval ("source \"/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
+	eval ("source \"D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
 }
 else if (getApplicationVersionAsFloat() >= 7.0)
 {
-	loadPlugin "/Applications/Autodesk/maya2024/Maya.app/Contents/MacOS/plug-ins/fbxmaya.lib";
-	eval ("source \"/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
+	loadPlugin "E:/Maya2024/bin/Contents/MacOS/plug-ins/fbxmaya.lib";
+	eval ("source \"D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
 }
 else if (getApplicationVersionAsFloat() >= 6.5)
 {
-	loadPlugin "/Applications/Unity/Hub/Editor/2019.2.11f1/Unity/Unity.app/Contents/Tools/fbxmaya65.lib";
-	eval ("source \"/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
+	loadPlugin "D:/Unity/2019.2.11f1/Editor/Unity.exe/Contents/Tools/fbxmaya65.lib";
+	eval ("source \"D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
 }
 else if (getApplicationVersionAsFloat() >= 6.0) 
 {
-	loadPlugin "/Applications/Unity/Hub/Editor/2019.2.11f1/Unity/Unity.app/Contents/Tools/fbxmaya60.lib";
-	eval ("source \"/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
+	loadPlugin "D:/Unity/2019.2.11f1/Editor/Unity.exe/Contents/Tools/fbxmaya60.lib";
+	eval ("source \"D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport.mel\"");
 }
 else if (getApplicationVersionAsFloat() >= 5.0)
 {
-	loadPlugin "/Applications/Unity/Hub/Editor/2019.2.11f1/Unity/Unity.app/Contents/Tools/fbxmaya50.lib";
-	eval ("source \"/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport5.mel\"");
+	loadPlugin "D:/Unity/2019.2.11f1/Editor/Unity.exe/Contents/Tools/fbxmaya50.lib";
+	eval ("source \"D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport5.mel\"");
 }
 else if (getApplicationVersionAsFloat() >= 4.5) 
 {
-	loadPlugin "/Applications/Unity/Hub/Editor/2019.2.11f1/Unity/Unity.app/Contents/Tools/fbxmaya45.lib";
-	eval ("source \"/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport5.mel\"");
+	loadPlugin "D:/Unity/2019.2.11f1/Editor/Unity.exe/Contents/Tools/fbxmaya45.lib";
+	eval ("source \"D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/FBXMayaExport5.mel\"");
 }

@@ -1,13 +1,13 @@
 while (1)
 {	
-	if (`filetest -r "/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/CommandPipe"`)
+	if (`filetest -r "D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/CommandPipe"`)
 	{
 		$exportNormals = 0;
 		$exportTangents = 0;
 		$bakeCommand = "";
 	
 		// Parse settings
-		$waitpipe = `fopen "/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/CommandPipe" "r"`;
+		$waitpipe = `fopen "D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/CommandPipe" "r"`;
 		$filename = `fgetline $waitpipe`;
 		$fbxFilename = `fgetline $waitpipe`;
 		
@@ -144,9 +144,9 @@ while (1)
 			else
 				print "Could not open Maya file.";
 
-			sysFile -delete "/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/CommandPipe";
+			sysFile -delete "D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/CommandPipe";
 
-			$donepipe = `fopen "/Users/salmaabdelhady/MAIN_FASTTRASH/NewLandfill_A4/Temp/SyncPipe" "w"`;
+			$donepipe = `fopen "D:/HUB_DES350/MAIN_FASTTRASH/NewLandfill_A4/Temp/SyncPipe" "w"`;
 			fwrite $donepipe "Done";
 			fclose $donepipe;
 			print "Finished maya loading and fbx conversion \n";
