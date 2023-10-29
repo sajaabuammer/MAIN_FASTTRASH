@@ -31,6 +31,11 @@ using System.Collections;
 public class RockGrabbableObject : CAVE2Interactable {
 
     public ParticleSystem fire1;
+    public ParticleSystem fire2;
+    public ParticleSystem fire3;
+    public ParticleSystem fire4;
+    public ParticleSystem fire5;
+    public float delayTime = 4.0f;
 
     public enum HoldingStyle { ButtonPress, ButtonHold };
 
@@ -271,11 +276,22 @@ public class RockGrabbableObject : CAVE2Interactable {
             }
         }
         grabbed = true;
+        StartCoroutine(PlayParticleSystemWithDelay());
         Debug.Log("particples start");
-        fire1.Play();
+
+
+        IEnumerator PlayParticleSystemWithDelay()
+        {
+            fire1.Play();
+            yield return new WaitForSeconds(delayTime);
+            fire2.Play();
+            fire3.Play();
+            fire4.Play();
+            fire5.Play();
+        }
+
         // add partiles here
     }
-
     void OnWandGrabRelease()
     {
         grabber.GetComponentInChildren<CAVE2WandInteractor>().ReleaseObject(gameObject);
