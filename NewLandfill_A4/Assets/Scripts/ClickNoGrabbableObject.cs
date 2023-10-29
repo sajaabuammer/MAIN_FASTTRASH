@@ -32,6 +32,7 @@ public class ClickNoGrabbableObject : CAVE2Interactable {
 
     public GameObject question1;
 
+
     public enum HoldingStyle { ButtonPress, ButtonHold };
 
     [SerializeField]
