@@ -5,6 +5,7 @@ using UnityEngine;
 public class WheelCollisionLeather : MonoBehaviour
 {
     public GameObject Textile1;
+    
     /*public GameObject Textile2;
     public GameObject Textile3;
     public GameObject Textile4;
@@ -64,6 +65,7 @@ public class WheelCollisionLeather : MonoBehaviour
         {
             Destroy(Textile1);
             rotations1 = 0;
+      
         }
 
        /* if (rotations2 >= requiredRotations2)

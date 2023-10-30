@@ -5,6 +5,7 @@ using UnityEngine;
 public class WheelController : MonoBehaviour
 {
     public AudioClip mySound;
+    private AudioSource audioSource;
 
     float rotSpeed = 0;
 
@@ -21,6 +22,9 @@ public class WheelController : MonoBehaviour
         {
             this.rotSpeed = 2;
             GetComponent<AudioSource>().PlayOneShot(mySound);
+            audioSource.loop = true;
+            audioSource.Play();
+
         }
 
         transform.Rotate(0, 0, this.rotSpeed);
