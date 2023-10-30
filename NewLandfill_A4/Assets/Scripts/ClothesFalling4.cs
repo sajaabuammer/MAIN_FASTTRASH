@@ -8,7 +8,7 @@ public class ClothesFalling4 : MonoBehaviour
     public GameObject Textile4; // Reference to Textile1 in the Inspector.
     public GameObject WaterPlatform;
     public AudioClip mySound;
-
+    public Material newSkybox;
     void Start()
     {
         // Get the Rigidbody component attached to Cloth1.
@@ -31,6 +31,7 @@ public class ClothesFalling4 : MonoBehaviour
             rb.useGravity = true;
             WaterPlatform.SetActive(true);
             GetComponent<AudioSource>().PlayOneShot(mySound);
+			RenderSettings.skybox = newSkybox;
         }
     }
 }
