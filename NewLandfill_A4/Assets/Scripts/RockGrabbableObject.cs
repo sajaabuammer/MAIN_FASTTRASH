@@ -36,6 +36,9 @@ public class RockGrabbableObject : CAVE2Interactable {
     public ParticleSystem fire4;
     public ParticleSystem fire5;
     public float delayTime = 4.0f;
+    public AudioClip fire;
+    private AudioSource audioSource;
+    
 
     public enum HoldingStyle { ButtonPress, ButtonHold };
 
@@ -279,7 +282,7 @@ public class RockGrabbableObject : CAVE2Interactable {
         StartCoroutine(PlayParticleSystemWithDelay());
         Debug.Log("particples start");
 
-
+        GetComponent<AudioSource>().PlayOneShot(fire);
         IEnumerator PlayParticleSystemWithDelay()
         {
             fire1.Play();
@@ -289,7 +292,7 @@ public class RockGrabbableObject : CAVE2Interactable {
             fire4.Play();
             fire5.Play();
         }
-
+       
         // add partiles here
     }
     void OnWandGrabRelease()

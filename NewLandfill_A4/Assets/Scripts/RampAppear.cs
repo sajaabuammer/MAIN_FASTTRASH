@@ -9,6 +9,11 @@ public class RampAppear : MonoBehaviour
     public GameObject A2DESTROY; // Assign the GameObject to destroy in the Unity Editor
     public GameObject ChemicalSign;
     public GameObject ChemicalSignTransparent;
+    public ParticleSystem fire1;
+    public ParticleSystem fire2;
+    public ParticleSystem fire3;
+    public ParticleSystem fire4;
+    public ParticleSystem fire5;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +30,11 @@ public class RampAppear : MonoBehaviour
             ramp.SetActive(true);
             Destroy(ChemicalSign);
             ChemicalSignTransparent.SetActive(true);
+            fire1.Stop();
+            fire2.Stop();
+            fire3.Stop();
+            fire4.Stop();
+            fire5.Stop();
         }
     }
 }

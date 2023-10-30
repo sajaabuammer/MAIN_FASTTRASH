@@ -9,7 +9,7 @@ public class DelayedFire : MonoBehaviour
     public GameObject LetterS;
     public GameObject LetterL;
     public GameObject rock;
-    private float delayTime = 2.0f;
+    private float delayTime = 4.0f;
 
     // Start is called before the first frame update
     void Start()
