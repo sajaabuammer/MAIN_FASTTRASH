@@ -5,6 +5,7 @@ using UnityEngine;
 public class XJug : MonoBehaviour
 {
     public GameObject objectToAppear; // The object to appear upon trigger
+    public AudioClip mySound;
 
     private void Start()
     {
@@ -15,7 +16,8 @@ public class XJug : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            objectToAppear.SetActive(true); // Enable the object when the trigger is entered by the player
+            objectToAppear.SetActive(true);
+            GetComponent<AudioSource>().PlayOneShot(mySound); // Enable the object when the trigger is entered by the player
         }
     }
 }

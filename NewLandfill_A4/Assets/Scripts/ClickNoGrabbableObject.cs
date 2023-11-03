@@ -31,6 +31,7 @@ using System.Collections;
 public class ClickNoGrabbableObject : CAVE2Interactable {
 
     public GameObject question1;
+    
 
 
     public enum HoldingStyle { ButtonPress, ButtonHold };
@@ -246,6 +247,7 @@ public class ClickNoGrabbableObject : CAVE2Interactable {
 
     void OnWandGrab()
     {
+       
         if (GetComponent<Rigidbody>() && transform.parent != grabber )
         {
             // Check if grabbing object already is grabbing something else
