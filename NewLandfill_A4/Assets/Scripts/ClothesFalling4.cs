@@ -50,8 +50,6 @@ public class ClothesFalling4 : MonoBehaviour
             // Enable gravity to make Cloth1 fall with normal speed.
             rb.useGravity = true;
             WaterPlatform.SetActive(true);
-            GetComponent<AudioSource>().PlayOneShot(mySound);
-            RenderSettings.skybox = newSkybox;
             Boat1.SetActive(true);
             Boat2.SetActive(true);
             Boat3.SetActive(true);
@@ -61,6 +59,9 @@ public class ClothesFalling4 : MonoBehaviour
             POSTIVE4.SetActive(true);
             POSTIVE5.SetActive(true);
             POSTIVE6.SetActive(true);
+            GetComponent<AudioSource>().PlayOneShot(mySound);
+            RenderSettings.skybox = newSkybox;
+          
         }
     }
 }

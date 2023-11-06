@@ -32,7 +32,7 @@ public class ClickYESGrabbableObject : CAVE2Interactable {
 
     public GameObject question2;
     public AudioClip sucess;
-    public float delayTime = 1.5f;
+    public float delayTime = 1.75f;
 
 
 
@@ -276,7 +276,7 @@ public class ClickYESGrabbableObject : CAVE2Interactable {
         }
         grabbed = true;
         GetComponent<AudioSource>().PlayOneShot(sucess);
-        Destroy(question2, 1.5f);
+        Destroy(question2, 1.75f);
     }
 
     void OnWandGrabRelease()
