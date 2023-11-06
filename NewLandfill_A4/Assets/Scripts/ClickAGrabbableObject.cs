@@ -131,7 +131,7 @@ public class ClickAGrabbableObject : CAVE2Interactable {
         {
             // Create a basic highlight material
             pointingOverMaterial = new Material(Shader.Find("Standard"));
-            pointingOverMaterial.SetColor("_Color", new Color(0, 1, 1, 0.25f));
+            pointingOverMaterial.SetColor("_Color", new Color(1, 1, 1, 0.25f));
             pointingOverMaterial.SetFloat("_Mode", 3); // Transparent
             pointingOverMaterial.SetFloat("_Glossiness", 0);
         }
@@ -143,7 +143,7 @@ public class ClickAGrabbableObject : CAVE2Interactable {
         {
             // Create a basic highlight material
             touchingOverMaterial = new Material(Shader.Find("Standard"));
-            touchingOverMaterial.SetColor("_Color", new Color(0, 1, 1, 0.25f));
+            touchingOverMaterial.SetColor("_Color", new Color(1, 1, 1, 0.25f));
             touchingOverMaterial.SetFloat("_Mode", 3); // Transparent
             touchingOverMaterial.SetFloat("_Glossiness", 0);
         }

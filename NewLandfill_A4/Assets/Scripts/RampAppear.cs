@@ -35,6 +35,7 @@ public class RampAppear : MonoBehaviour
             fire3.Stop();
             fire4.Stop();
             fire5.Stop();
+
         }
     }
 }

@@ -30,8 +30,12 @@ using System.Collections;
 
 public class ClickYESGrabbableObject : CAVE2Interactable {
 
-    public GameObject rock;
     public GameObject question2;
+    public AudioClip sucess;
+    public float delayTime = 1.5f;
+
+
+
     public enum HoldingStyle { ButtonPress, ButtonHold };
 
     [SerializeField]
@@ -271,10 +275,8 @@ public class ClickYESGrabbableObject : CAVE2Interactable {
             }
         }
         grabbed = true;
-        Debug.Log("Question 2 appears");
-        rock.SetActive(true);
-        Destroy(question2);
-        // add partiles here
+        GetComponent<AudioSource>().PlayOneShot(sucess);
+        Destroy(question2, 1.5f);
     }
 
     void OnWandGrabRelease()

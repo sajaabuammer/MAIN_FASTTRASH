@@ -7,6 +7,7 @@ public class DESTROYTWO : MonoBehaviour
     public GameObject A1DESTROY;
     public GameObject A12CREATE;
     private bool hasDestroyed = false;
+    public AudioClip click2;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class DESTROYTWO : MonoBehaviour
     {
         if (A1DESTROY == null && !hasDestroyed)
         {
+            GetComponent<AudioSource>().PlayOneShot(click2);
             A12CREATE.SetActive(true);
             hasDestroyed = true;
         }

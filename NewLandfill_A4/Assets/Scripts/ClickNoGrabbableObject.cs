@@ -31,7 +31,8 @@ using System.Collections;
 public class ClickNoGrabbableObject : CAVE2Interactable {
 
     public GameObject question1;
-    
+    public AudioClip nobuzzer;
+    public float delayTime = 0.5f;
 
 
     public enum HoldingStyle { ButtonPress, ButtonHold };
@@ -275,7 +276,8 @@ public class ClickNoGrabbableObject : CAVE2Interactable {
         }
         grabbed = true;
         Debug.Log("Click No and Letters Fall");
-        Destroy(question1);
+        GetComponent<AudioSource>().PlayOneShot(nobuzzer);
+        Destroy(question1, 0.5f);
         // add partiles here
     }
 
@@ -300,6 +302,7 @@ public class ClickNoGrabbableObject : CAVE2Interactable {
 
         grabbed = false;
         wasGrabbed = true;
+       
     }
 
 

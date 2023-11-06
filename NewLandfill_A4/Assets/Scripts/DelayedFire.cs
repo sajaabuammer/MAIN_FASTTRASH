@@ -10,6 +10,7 @@ public class DelayedFire : MonoBehaviour
     public GameObject LetterL;
     public GameObject rock;
     private float delayTime = 4.0f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,8 @@ public class DelayedFire : MonoBehaviour
             Destroy(LetterA);
             Destroy(LetterS);
             Destroy(LetterL);
-            Destroy(rock);
+            Destroy(rock, 4.0f);
+
         }
     }
 

@@ -7,6 +7,7 @@ public class DESTROYFOUR : MonoBehaviour
     public GameObject IDESTROY;
     public GameObject I2CREATE;
     private bool hasDestroyed = false;
+    public AudioClip click4;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class DESTROYFOUR : MonoBehaviour
         {
             I2CREATE.SetActive(true);
             hasDestroyed = true;
+            GetComponent<AudioSource>().PlayOneShot(click4);
         }
     }
 

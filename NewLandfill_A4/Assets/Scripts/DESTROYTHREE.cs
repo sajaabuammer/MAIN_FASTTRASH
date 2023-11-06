@@ -6,6 +6,7 @@ public class DESTROYTHREE : MonoBehaviour
 {
     public GameObject E2DESTROY;
     public GameObject E22CREATE;
+    public AudioClip click3;
     private bool hasDestroyed = false;
 
     void Start()
@@ -19,6 +20,7 @@ public class DESTROYTHREE : MonoBehaviour
         {
             E22CREATE.SetActive(true);
             hasDestroyed = true;
+            GetComponent<AudioSource>().PlayOneShot(click3);
         }
     }
 
