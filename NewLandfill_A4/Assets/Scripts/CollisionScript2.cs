@@ -23,13 +23,15 @@ public class CollisionScript2 : MonoBehaviour
     public GameObject BigPile23;
     public GameObject BigPile24;
     public GameObject ChemRecSign;
-    public GameObject Jug1;
     public GameObject Jug2;
-    public GameObject Jug3;
     public GameObject Li;
     public GameObject ToxicGases;
     public GameObject BehindLetter;
 
+    public AudioClip mySound;
+    private AudioSource audioSource;
+
+    float rotSpeed = 0;
 
     public float fallSpeed = 1.0f; // Adjust the fall speed as needed.
 
@@ -54,13 +56,16 @@ public class CollisionScript2 : MonoBehaviour
             MoveObjectsUnderGround(BigPile23);
             MoveObjectsUnderGround(BigPile24);
             Destroy(ChemRecSign);
-            Destroy(Jug1);
             Destroy(Jug2);
-            Destroy(Jug3);
             Destroy(Li);
             Destroy(ToxicGases);
             Destroy(BehindLetter);
+
+            GetComponent<AudioSource>().PlayOneShot(mySound);
+            audioSource.loop = true;
+            audioSource.Play();
         }
+
     }
 
     void MoveObjectsUnderGround(GameObject obj)

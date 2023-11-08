@@ -185,7 +185,7 @@ public class ClickYESGrabbableObject : CAVE2Interactable {
             {
                 renderer.enabled = false;
             }
-        }
+        } 
         if (showTouchingOver)
         {
             if (wandTouching)

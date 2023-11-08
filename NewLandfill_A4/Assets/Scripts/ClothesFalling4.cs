@@ -14,6 +14,13 @@ public class ClothesFalling4 : MonoBehaviour
     public Material newSkybox;
     public GameObject placetextile;
     public GameObject Spin;
+    public GameObject summary;
+    public GameObject POSTIVE1;
+    public GameObject POSTIVE2;
+    public GameObject POSTIVE3;
+    public GameObject POSTIVE4;
+    public GameObject POSTIVE5;
+    public GameObject POSTIVE6;
     void Start()
     {
         // Get the Rigidbody component attached to Cloth1.
@@ -30,7 +37,13 @@ public class ClothesFalling4 : MonoBehaviour
         Boat2.SetActive(false);
         placetextile.SetActive(true);
         Spin.SetActive(true);
-
+        summary.SetActive(false);
+        POSTIVE1.SetActive(false);
+        POSTIVE2.SetActive(false);
+        POSTIVE3.SetActive(false);
+        POSTIVE4.SetActive(false);
+        POSTIVE5.SetActive(false);
+        POSTIVE6.SetActive(false);
     }
 
     void Update()
@@ -46,6 +59,13 @@ public class ClothesFalling4 : MonoBehaviour
             Boat2.SetActive(true);
             placetextile.SetActive(false);
             Spin.SetActive(false);
+            summary.SetActive(true);
+            POSTIVE1.SetActive(true);
+            POSTIVE2.SetActive(true);
+            POSTIVE3.SetActive(true);
+            POSTIVE4.SetActive(true);
+            POSTIVE5.SetActive(true);
+            POSTIVE6.SetActive(true);
 
 
         }
